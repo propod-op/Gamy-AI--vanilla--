@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gamy !!!</title>
+    <link href="./generals.css" rel="stylesheet" />
+    <link href="./gamy.css" rel="stylesheet" />
+    <script src="./gamy.js" defer></script>
+    <script src="https://unpkg.com/ml5@1/dist/ml5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  </head>
+  <body>
+    <section class="head">
+      <img id="logo" src="./graphics/logo.png" alt="Logo Gamy" />
+      <h1 class="title">Jouez avec intelligence !</h1>
+    </section>
+
+    <section class="game">
+      <canvas id="draw-zone" width="800" height="400"></canvas>
+    </section>
+
+    <section class="tags">
+      <div class="container"><span class="tag">Tag de démo X</span></div>
+    </section>
+
+    <section class="toolbar">
+      <div class="container">
+        <div id="clear" width="30"></div>
+        <div></div>
+      </div>
+    </section>
+
+    <section class="control">
+      <div class="container">
+        <img src="./graphics/cestparti.png" id="cestparti" />
+      </div>
+      <div id="check">CHECK</div>
+    </section>
+
+    <footer>
+      <div class="mot">
+        Mot a faire deviner : <span id="mot">éléphant</span>
+      </div>
+      <div class="timer">Timer : <span id="time">0:25</span></div>
+    </footer>
+  </body>
+</html>

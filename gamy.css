@@ -1,0 +1,115 @@
+h1 {
+  font-family: "slackey", Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 1.3rem;
+  color: #222;
+  margin-top: 0.2rem;
+}
+
+/* ----------------- DRAW ZONE ---------------- */
+
+#draw-zone {
+  position: relative;
+  border: 2px solid #74676c;
+  margin-top: 1rem;
+  background-color: #f3edef;
+  border-radius: 0.5rem;
+}
+
+/* ----------------- TOOLBAR ---------------- */
+section.toolbar .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5rem;
+  width: var(--largeur-draw-zone);
+  height: 3rem;
+  margin-top: 0.5rem;
+
+  border-radius: 3rem;
+  background-color: var(--color-rose-3);
+  border: 1px solid var(--color-rose-4);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+}
+
+section.toolbar .container div {
+  width: 2.25rem;
+  height: 2.25rem;
+  background-color: white;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid #555;
+  border-radius: 2rem;
+}
+section.toolbar .container #clear {
+  background-image: url("./graphics/clear.png");
+}
+
+/* ----------------- TAGS ---------------- */
+section.tags .container {
+  position: relative;
+  width: var(--largeur-draw-zone);
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+section.tags .container span.tag {
+  background-color: var(--color-rose-4);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.75rem;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+}
+
+/* ----------------- CONTROLS (START) ---------------- */
+
+#cestparti {
+  height: 7rem;
+  width: 15rem;
+  height: auto;
+  cursor: pointer;
+}
+
+#check {
+  margin: 1rem;
+  width: 8rem;
+  height: 2rem;
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f3edef;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* ----------------- FOOTER ---------------- */
+footer {
+  height: 100%;
+  background-color: #aa0044;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 9rem;
+}
+
+footer * {
+  font-family: "dyna";
+  color: #fff;
+}
+
+footer div.mot {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+footer div.timer {
+  font-size: 1.5rem;
+}

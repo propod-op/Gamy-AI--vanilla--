@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "slackey";
+  src: url("./fonts/Slackey/Slackey-Regular.ttf");
+}
+
+@font-face {
+  font-family: "dyna";
+  src: url("./fonts/DynaPuff/DynaPuff-VariableFont_wdth\,wght.ttf");
+}
+
+:root {
+  --largeur-draw-zone: 800px;
+  --longueur-draw-zone: 400px;
+  --color-rose-light: 400px;
+  --color-rose-1: #d1b5b5;
+  --color-rose-2: #d4c0c8;
+  --color-rose-3: #ff80b2;
+  --color-rose-4: #aa0044;
+}
+
+body {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  /* color: #ff80b2; */
+  min-height: 100vh;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+section.head {
+  height: 10rem;
+
+  justify-content: center;
+  align-items: center;
+
+  border-bottom: 3px solid #aa0044;
+  background-color: var(--color-rose-1);
+}
+
+section.game {
+  position: relative;
+  height: auto;
+  background-color: #d4c0c8;
+}
+
+section.head #logo {
+  height: 5rem;
+  width: auto;
+  margin-top: 0.5rem;
+}
+
+section.toolbar {
+  background: var(--color-rose-2);
+}
+
+section.tags {
+  background: var(--color-rose-2);
+  height: auto;
+}
+
+section.control {
+  background-color: #d4c0c8;
+  border-bottom: 3px solid var(--color-rose-4);
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
