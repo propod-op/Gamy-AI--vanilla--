@@ -1,5 +1,5 @@
 #!/bin/bash
-# Synchronisation du projet avec xampp
+# Synchronisation du projet avec le dossier HTML de Xampp
 # https://doc.ubuntu-fr.org/tutoriel/script_shell
 
 xampp_htmlfolder="/opt/lampp/htdocs/gamy"
